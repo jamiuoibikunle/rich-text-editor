@@ -1,8 +1,4 @@
-import { ChakraProvider, theme } from "@chakra-ui/react";
 import Main from "./components/Main";
+import "./App.css";
 
-export const App = () => (
-    <ChakraProvider theme={theme}>
-        <Main />
-    </ChakraProvider>
-);
+export const App = () => <Main />;
