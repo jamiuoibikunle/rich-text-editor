@@ -56,33 +56,42 @@ const List = () => {
                     </Text>
                 </Flex>
                 {data.states !== undefined &&
-                    data.states.map((state) => {
-                        return (
-                            <Flex
-                                w="70rem"
-                                m="auto"
-                                py={5}
-                                justifyContent="space-between"
-                                key={state._id}
-                            >
-                                <Text width="20%" textAlign="center">
-                                    {state.state}
-                                </Text>
-                                <Text width="20%" textAlign="center">
-                                    {state.confirmedCases}
-                                </Text>
-                                <Text width="20%" textAlign="center">
-                                    {state.casesOnAdmission}
-                                </Text>
-                                <Text width="20%" textAlign="center">
-                                    {state.discharged}
-                                </Text>
-                                <Text width="20%" textAlign="center">
-                                    {state.death}
-                                </Text>
-                            </Flex>
-                        );
-                    })}
+                    data.states.map(
+                        ({
+                            _id,
+                            state,
+                            confirmedCases,
+                            casesOnAdmission,
+                            discharged,
+                            death,
+                        }) => {
+                            return (
+                                <Flex
+                                    w="70rem"
+                                    m="auto"
+                                    py={5}
+                                    justifyContent="space-between"
+                                    key={_id}
+                                >
+                                    <Text width="20%" textAlign="center">
+                                        {state}
+                                    </Text>
+                                    <Text width="20%" textAlign="center">
+                                        {confirmedCases}
+                                    </Text>
+                                    <Text width="20%" textAlign="center">
+                                        {casesOnAdmission}
+                                    </Text>
+                                    <Text width="20%" textAlign="center">
+                                        {discharged}
+                                    </Text>
+                                    <Text width="20%" textAlign="center">
+                                        {death}
+                                    </Text>
+                                </Flex>
+                            );
+                        }
+                    )}
             </Box>
         </Box>
     );
