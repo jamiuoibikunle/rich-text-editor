@@ -166,7 +166,7 @@ const EditorComponent = () => {
     };
 
     return (
-        <Box w="90%" m="2rem auto" border="1px solid rgb(219, 219, 219)">
+        <Box border="1px solid rgb(219, 219, 219)">
             <Slate
                 editor={editor}
                 value={initialValue as Descendant[]}
@@ -180,7 +180,7 @@ const EditorComponent = () => {
                     toggleBlock={toggleBlock}
                     toggleList={toggleList}
                 />
-                <Box p=".8rem 2rem" minH="30rem">
+                <Box p={{ base: "1rem", lg: ".8rem 2rem" }} minH="30rem">
                     <Editable
                         className={styles.editable}
                         renderElement={renderElement}
