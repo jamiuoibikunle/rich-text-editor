@@ -1,0 +1,44 @@
+.editable {
+    line-height: 1.5rem;
+}
+
+.editable p {
+    margin: 0.5rem 0;
+}
+
+.editable h2 {
+    margin: 1.3rem 0;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.editable h3 {
+    margin: 1.3rem 0;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.editable h4 {
+    margin: 1.3rem 0;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.editable pre {
+    background-color: #475569;
+    color: whitesmoke;
+    padding: 0.25rem 0.35rem;
+    border-radius: 0.35rem;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.editable blockquote,
+.editable ol,
+.editable ul {
+    padding-left: 1rem;
+}
+
+.active {
+    border: 1px solid #475569;
+}
